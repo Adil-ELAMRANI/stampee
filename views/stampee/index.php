@@ -238,7 +238,7 @@
     <div class="footer-container">
       <div class="footer-content">
         <div class="footer-logo">
-          <img src="{{ asset }}/assets/img/logosStampee/logo-2.png" alt="Logo" />
+          <img src="{{ asset }}/assets/logosStampee/logo-2.png" alt="Logo" />
         </div>
         <div class="footer-section">
           <h3>À propos</h3>
