@@ -1,0 +1,105 @@
+/*------------Utilisateur-------------*/
+/* --------- CONTAINER FORM --------- */
+.container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: var(--coul-blanc);
+  border: 1px solid var(--coul-muted);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* --------- FORM TITRE --------- */
+.container h2 {
+  margin-bottom: 1rem;
+  color: var(--coul-principale);
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+/* --------- FORM STRUCTURE TABLE --------- */
+form.form-utilisateur {
+  width: 100%;
+}
+
+form.form-utilisateur table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+form.form-utilisateur td {
+  padding: 0.7rem;
+  vertical-align: top;
+}
+
+form.form-utilisateur label {
+  font-weight: bold;
+  color: var(--coul-noir);
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+form.form-utilisateur input,
+form.form-utilisateur select,
+form.form-utilisateur textarea {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid var(--coul-muted);
+  border-radius: 8px;
+  background-color: var(--coul-pale);
+  font-size: 1rem;
+}
+
+form.form-utilisateur input:focus,
+form.form-utilisateur select:focus,
+form.form-utilisateur textarea:focus {
+  outline: none;
+  border-color: var(--coul-principale);
+  box-shadow: 0 0 4px var(--coul-principale);
+}
+
+/* --------- BOUTON --------- */
+form.form-utilisateur .btn {
+  background-color: var(--coul-bouton-fond);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  display: block;
+  transition: background-color 0.3s;
+}
+
+form.form-utilisateur .btn:hover {
+  background-color: var(--coul-secondaire-fonce);
+}
+
+/* --------- ERREURS --------- */
+.error {
+  background-color: var(--coul-danger);
+  color: white;
+  padding: 1rem;
+  margin-bottom: 1.2rem;
+  border-radius: 8px;
+}
+
+/* --------- RESPONSIVE --------- */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  form.form-utilisateur td {
+    display: block;
+    width: 100%;
+  }
+
+  form.form-utilisateur input,
+  form.form-utilisateur select {
+    font-size: 1rem;
+  }
+}

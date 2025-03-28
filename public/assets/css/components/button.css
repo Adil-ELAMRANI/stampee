@@ -1,0 +1,118 @@
+.miser {
+    padding: var(--space-m);
+    display: flex;
+    justify-content: center;
+  }
+  .interactive{
+    cursor: pointer;
+  }
+  
+  
+  .bouton-miser {
+    width: 60%;
+    background-color: var(--coul-principale);
+    font-family: var(--police-principale);
+    font-size: var(--police-m);
+    font-weight: 600;
+    color: var(--coul-blanc);
+    border: none;
+    padding: var(--space-xs);
+    cursor: pointer;
+    border-radius: var(--space-xxs);
+    font-size: var(--police-xs);
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  .bouton-miser:hover {
+    background-color: var(--coul-secondaire);
+  }
+  
+  .div-bouton-filtre {
+    display: flex;
+    justify-content: center;
+    margin-top: var(--space-m);
+    width: 100%;
+  }
+  
+  .bouton-filtre {
+    width: 60%;
+    background-color: var(--coul-accent);
+    font-family: var(--police-principale);
+    font-size: var(--police-m);
+    font-weight: 700;
+    color: var(--coul-principale);
+    border: none;
+    padding: var(--space-xs);
+    cursor: pointer;
+    border-radius: var(--space-xxs);
+    font-size: var(--police-xs);
+    transition: background-color 0.3s ease;
+  }
+  
+  
+  
+  button[type="submit"] {
+    background-color: var(--coul-principale);
+    font-family: var(--police-principale);
+    font-size: var(--police-m);
+    font-weight: 600;
+    color: var(--coul-blanc);
+    border: none;
+    padding: var(--space-xs);
+    cursor: pointer;
+    border-radius: var(--space-xxs);
+    font-size: var(--police-xs);
+    transition: background-color 0.3s ease;
+    margin-left: var(--space-xs);
+  }
+  
+  button[type="submit"]:hover {
+    background-color: var(--coul-secondaire);
+  }
+  
+  .bouton-miser-enchere {
+    width: 50%;
+    background-color: var(--coul-principale);
+    font-family: var(--police-principale);
+    font-size: var(--police-m);
+    font-weight: 600;
+    color: var(--coul-blanc);
+    border: none;
+    padding: var(--space-xs);
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: var(--police-xs);
+    transition: background-color 0.3s ease;
+    margin-bottom: var(--space-m);
+  }
+  .bouton-miser-enchere:hover {
+    background-color: var(--coul-secondaire);
+  }
+  .bouton-timbre {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .info {
+    text-align: center;
+    width: 50%;
+    background-color: var(--coul-blanc);
+    font-family: var(--police-principale);
+    font-size: var(--police-m);
+    font-weight: 600;
+    color: var(--coul-principale);
+    border: 1mm ridge var(--coul-secondaire);
+  
+    padding: var(--space-xs);
+    cursor: pointer;
+    border-radius: var(--space-xxs);
+    font-size: var(--police-xs);
+    transition: background-color 0.3s ease;
+  }
+  .info:hover {
+    background-color: var(--coul-secondaire);
+  }
+  
+  

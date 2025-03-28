@@ -1,0 +1,24 @@
+.lien_page {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .lien_page a {
+    text-decoration: none;
+    margin: 0 var(--space-s);
+    color: var(--coul-blanc);
+    font-weight: 600;
+    display: flex;
+  }
+  
+  .connexion-langue {
+    display: flex;
+    align-items: center;
+    & a {
+      text-decoration: none;
+      margin: var(--space-s);
+      color: var(--coul-blanc);
+    }
+  }
+  

@@ -1,0 +1,11 @@
+:root {
+    --space-xxs: 4px;
+    --space-xs: 8px;
+    --space-m: 12px;
+    --space-m: 16px;
+    --space-l: 20px;
+    --space-xl: 30px;
+    --space-xxl: 50px;
+    --space-xxxl: 100px;
+    --space-xxxxl: 500px;
+}

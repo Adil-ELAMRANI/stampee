@@ -1,0 +1,258 @@
+/* ===================================== */
+/* == CONTAINER PRINCIPAL & TITRES ===== */
+/* ===================================== */
+
+.main-container {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: var(--coul-blanc);
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  font-family: 'Roboto', sans-serif;
+}
+
+.main-container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--coul-noir);
+}
+
+/* ===================================== */
+/* ========== BOUTONS ================== */
+/* ===================================== */
+
+.actions-top {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 15px;
+}
+
+.actions-top button {
+  padding: 10px 18px;
+  background-color: var(--coul-succes);
+  border: none;
+  border-radius: 6px;
+  color: var(--coul-blanc);
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.actions-top button:hover {
+  background-color: var(--coul-secondaire-fonce);
+}
+
+/* Boutons Modifier / Supprimer */
+.action-buttons {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.action-buttons button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  color:var(--coul-blanc);
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.action-buttons button:first-child {
+  background-color: var(--coul-accent);
+}
+.action-buttons button:first-child:hover {
+  background-color: #d78c24;
+}
+
+.action-buttons button:last-child {
+  background-color: var(--coul-principale);
+}
+.action-buttons button:last-child:hover {
+  background-color: var(--coul-secondaire-fonce);
+}
+
+/* ===================================== */
+/* ========== TABLEAU ================== */
+/* ===================================== */
+
+.table-crud {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--coul-pale);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table-crud thead {
+  background-color: var(--coul-principale);
+  color: var(--coul-blanc);
+}
+
+.table-crud th,
+.table-crud td {
+  border: 0px solid var(--coul-pale);
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid var(--coul-secondaire-fonce);
+}
+
+.table-crud tbody tr:nth-child(even) {
+  background-color: var(--coul-secondaire-fonce);
+}
+
+.table-crud tbody tr:hover {
+  background-color: var(--coul-blanc)
+}
+
+.main-container p {
+  text-align: center;
+  font-style: italic;
+  color: var(--coul-muted);
+  margin-top: 20px;
+}
+
+/* ===================================== */
+/* ========== FORMULAIRE =============== */
+/* ===================================== */
+
+.form-utilisateur {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+
+.form-utilisateur label {
+  font-weight: bold;
+  color: var(--coul-noir);
+}
+
+.form-utilisateur input,
+.form-utilisateur select {
+  padding: 10px;
+  border: 1px solid var(--coul-blanc);
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: var(--coul-blanc);
+}
+
+.form-utilisateur input:disabled {
+  background-color: var(--coul-blanc);
+  cursor: not-allowed;
+}
+
+.form-utilisateur .btn {
+  align-self: flex-start;
+  background-color: var(--coul-succes);
+  color: var(--coul-blanc);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-utilisateur .btn:hover {
+  background-color: var(--coul-secondaire-fonce);
+}
+
+/* ===================================== */
+/* ========== ERREURS ================== */
+/* ===================================== */
+
+.error {
+  color: var(--coul-blanc);
+  font-weight: bold;
+  font-size: 1em;
+  margin-top: -10px;
+}
+
+/* ===================================== */
+/* ========== RESPONSIVE =============== */
+/* ===================================== */
+
+@media screen and (max-width: 768px) {
+  .table-crud thead {
+    display: none;
+  }
+
+  .table-crud, .table-crud tbody, .table-crud tr, .table-crud td {
+    display: block;
+    width: 100%;
+  }
+
+  .table-crud tr {
+    margin-bottom: 20px;
+    background-color: var(--coul-pale);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px var(--coul-noir);
+  }
+
+  .table-crud td {
+    text-align: right;
+    position: relative;
+    padding-left: 50%;
+    border: none;
+    border-bottom: 1px solid var(--coul-blanc);
+  }
+
+  .table-crud td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 16px;
+    top: 12px;
+    font-weight: bold;
+    color: var(--coul-noir);
+    text-align: left;
+  }
+
+  .form-utilisateur {
+    padding: 0 10px;
+  }
+
+  .form-utilisateur label {
+    font-size: 14px;
+  }
+
+  .form-utilisateur input,
+  .form-utilisateur select {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .form-utilisateur .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .action-buttons {
+    justify-content: center;
+  }
+}
+
+/* ===================================== */
+/* ========== IMAGE TIMBRE ============= */
+/* ===================================== */
+
+.timbre-image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timbre-thumbnail {
+  max-height: 80px;
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+}
+
+.timbre-thumbnail:hover {
+  transform: scale(1.5);
+  z-index: 10;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}

@@ -1,0 +1,99 @@
+/* Media Queries */
+
+/* Media Query - Navigation Mobile */
+@media screen and (max-width: 768px) {
+    .navigation_header {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .navigation_header .lien_page {
+      flex-direction: column;
+      gap: 15px;
+    }
+    .navigation_footer {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 10px;
+    }
+    .connexion-langue {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  
+  /* Media Query - Accueil Mobile */
+  @media screen and (max-width: 768px) {
+    .message-accueil h1, .message-accueil p {
+      font-size: var(--police-l);
+    }
+    .message-accueil {
+      padding: var(--space-m);
+    }
+    .presentation-accueil, .contenu-accueil-histoire {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  /* Media Query - Boutons Mobile */
+  @media screen and (max-width: 768px) {
+    .bouton-miser, .bouton-filtre, .bouton-miser-enchere, button[type="submit"] {
+      width: 100%;
+      font-size: var(--police-m);
+      padding: var(--space-s);
+    }
+  }
+  
+  /* Media Query - Cartes Mobile */
+  @media screen and (max-width: 768px) {
+    .tuile {
+      width: 100%;
+      box-shadow: none;
+      text-align: center;
+    }
+  }
+  
+  /* Media Query - Grilles Mobile */
+  @media screen and (max-width: 768px) {
+    .grid-container {
+      grid-template-columns: 1fr;
+      padding: var(--space-m);
+    }
+  }
+  
+  /* Media Query - Enchère Mobile */
+@media screen and (max-width: 768px) {
+  .main-enchere {
+    padding: var(--space-m);
+    border-radius: var(--space-m);
+  }
+  .hero-banner-enchere h1 {
+    font-size: var(--police-xl);
+    padding: var(--space-s) 0;
+  }
+  .miser-sur-un-timbre {
+    flex-direction: column;
+    gap: var(--space-m);
+    padding: var(--space-m);
+  }
+  .image {
+    width: 100%;
+    max-width: 300px;
+  }
+  .text {
+    font-size: var(--police-l);
+    text-align: center;
+  }
+  .bouton-timbre {
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-s);
+  }
+  .bouton-miser-enchere, .info {
+    width: 100%;
+    font-size: var(--police-m);
+    padding: var(--space-s);
+  }
+}

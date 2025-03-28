@@ -1,0 +1,199 @@
+/*Accueil*/
+.message-accueil h1 {
+  margin-top: var(--space-xl);
+  color: var(--coul-principale);
+  font-family: var(--police-principale);
+  font-size: var(--police-xxl);
+  font-weight: 600;
+  text-align: center;
+}
+
+.message-accueil p {
+  color: var(--coul-noir);
+  font-family: var(--police-paragraphe);
+  text-align: center;
+  font-size: var(--police-xl);
+}
+
+a button {
+  margin-top: var(--space-s);
+  background-color: var(--coul-principale);
+  font-family: var(--police-principale);
+  color: var(--coul-blanc);
+  border: none;
+  cursor: pointer;
+  border-radius: var(--space-xxs);
+  font-size: var(--police-xs);
+}
+
+a button:hover {
+  background-color: var(--coul-secondaire);
+}
+
+.accueil-histoire {
+  margin: var(--space-xl);
+  padding: var(--space-xl);
+}
+
+.accueil-histoire h2 {
+  text-align: left;
+  color: var(--coul-principale);
+  font-family: var(--police-principale);
+  font-weight: 700;
+  font-size: var(--police-xl);
+  margin-bottom: var(--space-xs);
+  margin-top: var(--space-xs);
+}
+
+.contenu-accueil-histoire {
+  display: flex;
+  margin-top: var(--space-l);
+}
+
+.contenu-accueil-histoire img {
+  width: 40%;
+  height: fit-content;
+  object-fit: contain;
+  border-radius: var(--space-m);
+  margin-bottom: var(--space-s);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+.presentation-accueil {
+  display: block;
+  width: 60%;
+  padding-left: var(--space-xl);
+}
+
+.presentation-accueil p {
+  text-align: left;
+  font-family: var(--police-paragraphe);
+  font-size: var(--police-xl);
+  line-height: var(--space-xxl);
+}
+
+.principes h3 {
+  color: var(--coul-principale);
+  font-family: var(--police-principale);
+  font-weight: 700;
+  font-size: var(--police-xl);
+  margin-bottom: var(--space-s);
+  margin-top: var(--space-s);
+}
+
+.principes {
+  display: flex;
+  margin: var(--space-xxl);
+  padding: var(--space-xl);
+  text-align: center;
+}
+
+.principes p {
+  color: var(--coul-noir);
+  text-align: left;
+  font-family: var(--police-paragraphe);
+  font-size: var(--police-l);
+  line-height: var(--space-xl);
+  text-align: center;
+}
+
+/*A propos*/
+
+.about-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-l);
+}
+
+.alternate-section div {
+  padding: var(--space-l);
+  background-color:var(--coul-pale);
+  border-radius: var(--space-l);
+}
+.p-apropos {
+  color:var(--coul-noir);
+  margin-top: var(--space-xl);
+  margin-bottom: var(--space-xxl);
+}
+.about-grid-item {
+margin: auto;
+  width: var(--space-xxxxl);
+}
+.about-grid-item img {
+  max-width: 100%;
+  margin-top: var(--space-xxl);
+  height: auto;
+  box-shadow: 20px 30px 10px var(--coul-noir);
+  border-radius: var(--space-l);
+  animation: floatingAnimation 3s infinite alternate;
+}
+@keyframes floatingAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(6px); 
+  }
+}
+.about-grid-item p {
+  font-family: var(--police-paragraphe);
+  color: var(--coul-principale);
+  font-size: var(--police-xl);
+}
+
+.about-grid-item h2 {
+  margin-top: var(--space-xxl);
+  font-family: var(--police-citation);
+  font-size: var(--police-xxl);
+  color: var(--coul-secondaire-fonce);
+  text-align: center;
+}
+
+.alternate-section {
+  margin: var(--space-xxl);
+}
+.p-apropos {
+  font-family: var(--police-paragraphe);
+  font-size: var(--police-xl);
+  line-height: var(--space-xl);
+}
+
+.alternate-section h2 {
+  font-family: var(--police-citation);
+  font-size: var(--space-xxl);
+  color: var(--coul-principale);
+}
+
+/*modal*/
+
+.modal {
+  display: flex;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 300px;
+  position: relative;
+}
+
+.modal .close {
+  position: absolute;
+  top: 10px; right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+

@@ -1,0 +1,75 @@
+/* Styles pour le footer */
+footer {
+  background-color: var(--coul-principale);
+  color: var(--coul-blanc);
+  font-family: var(--police-principale);
+  font-size: var(--police-s);
+  padding: var(--space-m);
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 20px;
+}
+
+.footer-logo img {
+  height: 50px;
+}
+
+.footer-section h3 {
+  color: var(--coul-accent);
+  font-size: var(--police-m);
+}
+
+.footer-section p {
+  margin: 5px 0;
+  font-size: var(--police-s);
+}
+
+.footer-bottom {
+  border-top: 1px solid var(--coul-secondaire-fonce);
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+  font-size: var(--police-xs);
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+}
+
+/* Styles pour la section footer-bottom */
+.footer-bottom {
+  border-top: 1px solid var(--coul-secondaire-fonce);
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 8px;
+  font-size: var(--police-xs);
+  text-align: center;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: var(--police-xs);
+}
+
+@media (max-width: 768px) {
+  .footer-bottom {
+      flex-direction: column;
+      gap: 10px;
+  }
+}

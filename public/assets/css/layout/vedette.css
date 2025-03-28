@@ -1,0 +1,85 @@
+.vedette {
+    background-color: var(--coul-pale);
+    color: var(--coul-principale);
+    padding: var(--space-xxsl);
+    text-align: center;
+    margin-top: var(--space-l);
+  }
+  
+  .tuile_vedette {
+    width: 70%;
+    border-radius: var(--space-l);
+    border-bottom: 6px solid var(--style-l, #EA3D2F);
+    background: var(--coul-pale);
+    box-shadow: 0px 6px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+  
+  .tuile_vedette img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--space-xs);
+    object-fit: cover;
+  }
+  
+  .tuile_vedette h3 {
+    font-size: var(--police-m);
+    font-weight: 700;
+    margin-top: var(--space-s);
+    margin-bottom: var(--space-xs);
+  }
+  
+  .tuile_vedette p {
+    font-family: var(--police-paragraphe);
+    font-size: var(--police-m);
+    margin-bottom: var(--space-xs);
+    color: var(--coul-principale);
+  }
+  
+  .description_tuile_vedette {
+    padding: var(--space-s);
+  }
+  
+  .icones {
+    padding: var(--space-m);
+  }
+  
+  .pagination {
+    margin: auto;
+    padding: var(--space-m);
+    align-self: flex-end;
+  }
+  .vedette h2 {
+    margin-bottom: var(--space-l);
+    font-family: var(--police-principale);
+    font-size: var(--police-xl);
+    font-weight: 600;
+  }
+  
+  .pagination a {
+    background-color: var(--coul-principale);
+    padding: var(--space-xs);
+    text-decoration: none;
+    border: 1px solid var(--coul-principale);
+    margin: 0 var(--space-xs);
+    border-radius: var(--space-xxs);
+    color: var(--coul-blanc);
+    font-weight: 500;
+    font-family: var(--police-paragraphe);
+    font-size: var(--police-m);
+  }
+  
+  .container_tuile_vedette {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-l);
+    padding: 0 20px 20px 20px;
+    justify-items: center;
+  }
+  
+  .filtres {
+    position: sticky;
+    top: var(--space-l);
+    margin-right: var(--space-xxl);
+  }
+  
