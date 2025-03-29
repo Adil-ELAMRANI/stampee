@@ -102,7 +102,7 @@ Elle permet aux membres du monde entier de publier et participer à des enchère
 
 ## 🏗️ Méthodologie SCRUM
 
-### 🟩 SPRINT 0
+### 🟩 SPRINT 0 ✅ Terminé
 
 - ✔️ Charte de projet
 - ✔️ Charte graphique
@@ -111,12 +111,21 @@ Elle permet aux membres du monde entier de publier et participer à des enchère
 - ✔️ Product Backlog complet
 - ✔️ Sprint backlog initial
 
-### 🟨 SPRINT 1
+### 🟩 SPRINT 1 ✅ Terminé
+- ✔️ Connexion / déconnexion (login/logout)
+- ✔️ CRUD complet pour les utilisateurs
+- ✔️ Suivi des tâches (heures réelles, tâches finalisées ou non)
+- ✔️ Mise à jour du MPD
+- ✔️ Tests unitaires de base sur formulaire utilisateur
 
-- 🔄 Implémentation des fonctionnalités de base
-- 🔄 Suivi des tâches (heures réelles, tâches finalisées ou non)
-- 🔄 Mise à jour du MPD
-
+### 🟨 SPRINT 2 — 🟨 En cours
+- ✔️ CRUD complet pour les timbres
+- ✔️ Liaisons dynamiques avec les tables pays, certification, état_timbre
+- ✔️ Upload d’image de timbre + modèle Image
+- ✔️ CRUD enchères avec champ coup de cœur & statut
+- ✔️ Vue enchère (create, edit, index)
+- 🕗 Intégration formulaire de mise & favoris à venir
+- 🕗 Lien page fiche enchère & amélioration affichage
 ...
 
 _(reprendre selon l’avancement réel de mon projet)_
