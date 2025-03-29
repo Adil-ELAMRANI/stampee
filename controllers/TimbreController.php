@@ -102,7 +102,7 @@ class TimbreController
         $validator->field('utilisateur_id', $data['utilisateur_id'])->required();
 
         if ($validator->isSuccess()) {
-            // ✅ Corrigé : ordre des paramètres
+            //Ordre des paramètres
             (new Timbre)->update($data['id'], $data);
 
             if (isset($_FILES['image']) && $_FILES['image']['error'] === 0) {
@@ -114,7 +114,7 @@ class TimbreController
                 $existing = $imageModel->where('timbre_id', $data['id']);
 
                 if ($existing) {
-                    // ✅ Corrigé : ordre des paramètres
+                    //Ordre des paramètres
                     $imageModel->update($existing->id, ['image_principale' => $imageName]);
                 } else {
                     $imageModel->insert(['image_principale' => $imageName, 'timbre_id' => $data['id']]);

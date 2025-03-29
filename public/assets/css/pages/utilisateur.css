@@ -122,29 +122,50 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: var(--coul-blanc);
+  border: 1px solid #ddd;
+  border-radius: 12px;
 }
 
 
 .form-utilisateur label {
+  display: block;
+  margin-bottom: 0.5rem;
   font-weight: bold;
   color: var(--coul-noir);
 }
 
-.form-utilisateur input,
+.form-utilisateur input[type="text"],
+.form-utilisateur input[type="email"],
+.form-utilisateur input[type="number"],
+.form-utilisateur input[type="password"],
+.form-utilisateur input[type="datetime-local"],
 .form-utilisateur select {
+  width: 100%;
   padding: 10px;
-  border: 1px solid var(--coul-blanc);
+  border: 1px solid var(--coul-noir);
   border-radius: 6px;
   font-size: 16px;
   background-color: var(--coul-blanc);
+  color: var(--coul-noir);
 }
 
-.form-utilisateur input:disabled {
+.form-utilisateur input:focus
+.form-utilisateur select:focus {
   background-color: var(--coul-blanc);
   cursor: not-allowed;
+  outline: none;
 }
 
-.form-utilisateur .btn {
+.form-utilisateur input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+.form-utilisateur .btn,
+.form-utilisateur button[type="submit"] {
   align-self: flex-start;
   background-color: var(--coul-succes);
   color: var(--coul-blanc);
@@ -156,8 +177,17 @@
   transition: background-color 0.3s;
 }
 
-.form-utilisateur .btn:hover {
+.form-utilisateur .btn:hover,
+.form-utilisateur button[type="submit"]:hover {
   background-color: var(--coul-secondaire-fonce);
+}
+
+.form-utilisateur .error {
+  color: var(--coul-danger);
+  font-size: 0.9rem;
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+  display: block;
 }
 
 /* ===================================== */
