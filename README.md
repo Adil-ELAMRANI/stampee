@@ -132,4 +132,11 @@ _(reprendre selon l’avancement réel de mon projet)_
 
 ---
 
+ Accès
+🔗 Dépôt GitHub : https://github.com/Adil-ELAMRANI/stampee
 
+---
+
+🙋 Contact
+Adil EL AMRANI
+GitHub : @Adil-ELAMRANI
