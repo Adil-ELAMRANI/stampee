@@ -55,6 +55,13 @@ class Validator {
         return empty($this->errors);
     }
 
+    public function numeric() {
+        if (!is_numeric($this->value)) {
+            $this->errors[$this->key] = "$this->name doit être un nombre.";
+        }
+        return $this;
+    } 
+
     public function getErrors() {
         return $this->errors;
     }

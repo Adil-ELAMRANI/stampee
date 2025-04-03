@@ -18,10 +18,21 @@ Route::get('/utilisateur/edit', 'UtilisateurController@edit');
 Route::post('/utilisateur/update', 'UtilisateurController@update');
 Route::get('/utilisateur/delete', 'UtilisateurController@delete');
 
+// CRUD Timbre
+Route::get('/timbre', 'TimbreController@index');
+Route::get('/timbre/create', 'TimbreController@create');
+Route::post('/timbre/store', 'TimbreController@store');
+Route::get('/timbre/edit', 'TimbreController@edit');
+Route::post('/timbre/update', 'TimbreController@update');
+Route::get('/timbre/delete', 'TimbreController@delete');
 
-
-
-
+// CRUD Enchère
+Route::get('/enchere', 'EnchereController@index');             
+Route::get('/enchere/create', 'EnchereController@create');     
+Route::post('/enchere/create', 'EnchereController@store');     
+Route::get('/enchere/edit', 'EnchereController@edit');         
+Route::post('/enchere/update', 'EnchereController@update');    
+Route::get('/enchere/delete', 'EnchereController@delete');     
 
 
 Route::dispatch();

@@ -15,14 +15,13 @@
       <img class="logo" src="{{ asset }}/assets/logosStampee/logo-2.png" alt="test" />
       <div class="lien_page">
         <a href="{{base}}/"><i class="fas fa-home interactive"></i> Accueil</a>
-        <a href="{{base}}/catalogue.php"><i class="fas fa-book interactive"></i> Catalogue</a>
-        <a href="{{base}}/enchere.php"><i class="fas fa-gavel interactive"></i> Enchère</a>
+        <a href="catalogue.html"><i class="fas fa-book interactive"></i> Catalogue</a>
+        <a href="enchere.html"><i class="fas fa-gavel interactive"></i> Enchère</a>
         <a href="apropos.html"><i class="fas fa-question-circle interactive"></i> À propos</a>
       </div>
       <div class="connexion-langue">
 
         <!-- Icône SVG de connexion cliquable -->
-        {% if guest == "false" %}
         <a href="#" id="btn-connexion" title="Se connecter">
           <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -30,12 +29,10 @@
               fill="#F39C12" />
           </svg>
         </a>
-        {% else %}
         <a href="{{ base }}/logout" title="Se déconnecter">
           <i class="fas fa-sign-out-alt interactive"></i>
         </a>
-        {% endif %}
-        
+
         <!-- MODAL Connexion / Inscription -->
         <div id="modal-connexion" class="modal hidden">
           <div class="modal-content">
