@@ -131,9 +131,11 @@ Elle permet aux membres du monde entier de publier et participer à des enchère
 _(reprendre selon l’avancement réel de mon projet)_
 
 ---
+## 🌍 Accès au projet  
 
- Accès
-🔗 Dépôt GitHub : https://github.com/Adil-ELAMRANI/stampee
+🔗 **Dépôt GitHub** : [Adil-ELAMRANI/stampee](https://github.com/Adil-ELAMRANI/stampee)  
+
+🚀 **Démo en ligne** : [Stampee](https://e2395866.webdev.cmaisonneuve.qc.ca/stampee/)  
 
 ---
 
