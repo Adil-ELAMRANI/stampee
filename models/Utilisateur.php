@@ -25,7 +25,7 @@ class Utilisateur extends CRUD{
         return $this->query($sql)->fetchAll(\PDO::FETCH_OBJ);
     }
 
-    public function checkUser($username, $password) {
+    /*public function checkUser($username, $password) {
         // Récupération de l'utilisateur (objet stdClass)
         $user = $this->unique('nom_utilisateur', $username);
     
@@ -43,6 +43,17 @@ class Utilisateur extends CRUD{
     
                 return true;
             }
+        }
+    
+        return false;
+    }*/
+    
+    public function checkUser($username, $password) {
+        // Récupération de l'utilisateur (objet stdClass)
+        $user = $this->unique('nom_utilisateur', $username);
+    
+        if ($user && password_verify((string)$password, (string)$user->mot_de_passe)) {
+            return $user; // Renvoie l’objet utilisateur pour traitement dans le contrôleur
         }
     
         return false;

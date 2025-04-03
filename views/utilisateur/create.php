@@ -4,8 +4,6 @@
   <h1>{% if utilisateur.id is defined %}Modifier{% else %}Ajouter{% endif %} un utilisateur</h1>
   <form method="post" action="{{ base }}/utilisateur/create" class="form-utilisateur">
 
-  
-
     {% if utilisateur.id is defined %}
       <input type="hidden" name="id" value="{{ utilisateur.id }}">
     {% endif %}

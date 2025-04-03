@@ -27,7 +27,7 @@
       <tr>
         <td data-label="Image">
           {% if t.image %}
-          <img src="{{ base }}/assets/img/timbres/{{ t.image }}" alt="Image de {{ t.nom }}" class="timbre-thumbnail">
+          <img src="{{ asset }}/assets/img/timbres/{{ t.image }}" alt="Image de {{ t.nom }}" class="timbre-thumbnail">
           {% else %}
           <span style="color: #aaa;">(aucune)</span>
           {% endif %}
