@@ -112,20 +112,32 @@ Elle permet aux membres du monde entier de publier et participer à des enchère
 - ✔️ Sprint backlog initial
 
 ### 🟩 SPRINT 1 ✅ Terminé
+
 - ✔️ Connexion / déconnexion (login/logout)
 - ✔️ CRUD complet pour les utilisateurs
 - ✔️ Suivi des tâches (heures réelles, tâches finalisées ou non)
 - ✔️ Mise à jour du MPD
 - ✔️ Tests unitaires de base sur formulaire utilisateur
 
-### 🟨 SPRINT 2 — 🟨 En cours
+### 🟩 SPRINT 2 — ✅ Terminé
+
 - ✔️ CRUD complet pour les timbres
 - ✔️ Liaisons dynamiques avec les tables pays, certification, état_timbre
 - ✔️ Upload d’image de timbre + modèle Image
 - ✔️ CRUD enchères avec champ coup de cœur & statut
 - ✔️ Vue enchère (create, edit, index)
-- 🕗 Intégration formulaire de mise & favoris à venir
-- 🕗 Lien page fiche enchère & amélioration affichage
+
+### 🟨 SPRINT 3 — 🟨 À venir
+
+- 🕗 Création du modèle Mise pour gérer les offres des utilisateurs
+- 🕗 Développement du MiseController pour assurer les opérations CRUD des mises
+- 🕗 Ajout des routes associées dans web.php
+- 🕗 Affichage et interaction avec les enchères
+- 🕗 Création du formulaire de mise accessible depuis chaque fiche d’enchère
+- 🕗 Gestion des Encheres avec requêtes SQL directes insérant les enchères et offres
+- 🕗 Gestion des favoris et du profil utilisateur
+- 🕗 Ajout des routes pour la gestion des mises et favoris
+- 🕗 Création de enchere/show pour une fiche enchère complète affichant tous les détails
 ...
 
 _(reprendre selon l’avancement réel de mon projet)_
