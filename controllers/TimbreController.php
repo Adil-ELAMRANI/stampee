@@ -10,9 +10,15 @@ use App\Models\EtatTimbre;
 use App\Models\Utilisateur;
 use App\Providers\View;
 use App\Providers\Validator;
+use App\Providers\Auth;
 
-class TimbreController
-{
+class TimbreController{
+
+    public function __construct()
+    {
+        Auth::session();
+        // Auth::privilege();
+    }
     public function index()
     {
         $timbres = (new Timbre)->select();
@@ -27,6 +33,7 @@ class TimbreController
 
     public function create()
     {
+     
         return View::render('timbre/create', [
             'timbre' => [],
             'errors' => [],
@@ -63,7 +70,7 @@ class TimbreController
 
                 $targetPath = $uploadDir . $imageName;
 
-                $targetPath = dirname(__DIR__) . "../" . 'public/assets/img/timbres/' . $imageName;
+                $targetPath = dirname(__DIR__) . "/" . 'public/assets/img/timbres/' . $imageName;
 
                 if (move_uploaded_file($_FILES['image']['tmp_name'], $targetPath)) {
 

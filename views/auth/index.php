@@ -2,13 +2,13 @@
 
 <div class="container">
     {% if errors is defined %}
-        <div class="error">
-            <ul>
+    <div class="error">
+        <ul>
             {% for error in errors %}
-                <li>{{ error }}</li>
+            <li>{{ error }}</li>
             {% endfor %}
-            </ul>
-        </div>
+        </ul>
+    </div>
     {% endif %}
 
     <form method="post" class="form-auth">

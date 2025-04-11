@@ -14,7 +14,7 @@ abstract class CRUD extends PDO
     public function __construct()
     {
         try {
-            parent::__construct('mysql:host=localhost;dbname=stampee;port=3306;charset=utf8', 'root', '');
+            parent::__construct('mysql:host=localhost;dbname=e2395866;port=3306;charset=utf8', 'e2395866', 'TT44bij4eBFSmdtVptbA');
             $this->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         } catch (PDOException $e) {
             die('Connexion échouée : ' . $e->getMessage());
@@ -37,7 +37,8 @@ abstract class CRUD extends PDO
         return $stmt->rowCount() === 1 ? $stmt->fetch(PDO::FETCH_OBJ) : false;
     }
 
-    public function insert(array $data)    {
+    public function insert(array $data)
+    {
         $data = array_intersect_key($data, array_flip($this->fillable));
         $fields = implode(', ', array_keys($data));
         $placeholders = ':' . implode(', :', array_keys($data));
@@ -53,22 +54,24 @@ abstract class CRUD extends PDO
     }
 
 
-    public function update($id, array $data){
+    public function update($id, array $data)
+    {
         $data = array_intersect_key($data, array_flip($this->fillable));
         $fields = implode(', ', array_map(fn($key) => "$key = :$key", array_keys($data)));
         $sql = "UPDATE $this->table SET $fields WHERE $this->primaryKey = :id";
         $stmt = $this->prepare($sql);
-    
+
         foreach ($data as $key => $val) {
             $stmt->bindValue(":$key", $val);
         }
-    
+
         $stmt->bindValue(':id', $id);
         return $stmt->execute();
     }
-    
 
-    public function delete($id){
+
+    public function delete($id)
+    {
         if (!$this->selectId($id))
             return false;
 

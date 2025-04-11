@@ -19,6 +19,8 @@ class EnchereController{
     }
 
     public function create(){
+        //var_dump($_GET);
+        //die();
         $timbres = (new Timbre)->select('nom');
         return View::render('enchere/create', [
             'enchere' => [],
