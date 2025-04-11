@@ -127,14 +127,14 @@ Elle permet aux membres du monde entier de publier et participer à des enchère
 - ✔️ CRUD enchères avec champ coup de cœur & statut
 - ✔️ Vue enchère (create, edit, index)
 
-### 🟨 SPRINT 3 — 🟨 À venir
+### 🟩 SPRINT 3 — 🟨 en cour
 
-- 🕗 Création du modèle Mise pour gérer les offres des utilisateurs
-- 🕗 Développement du MiseController pour assurer les opérations CRUD des mises
-- 🕗 Ajout des routes associées dans web.php
-- 🕗 Affichage et interaction avec les enchères
-- 🕗 Création du formulaire de mise accessible depuis chaque fiche d’enchère
-- 🕗 Gestion des Encheres avec requêtes SQL directes insérant les enchères et offres
+- ✔️ Création du modèle Mise pour gérer les offres des utilisateurs
+- ✔️ Développement du MiseController pour assurer les opérations CRUD des mises
+- ✔️ Ajout des routes associées dans web.php
+- ✔️ Affichage et interaction avec les enchères
+- ✔️ Création du formulaire de mise accessible depuis chaque fiche d’enchère
+- ✔️ Gestion des Encheres avec requêtes SQL directes insérant les enchères et offres
 - 🕗 Gestion des favoris et du profil utilisateur
 - 🕗 Ajout des routes pour la gestion des mises et favoris
 - 🕗 Création de enchere/show pour une fiche enchère complète affichant tous les détails
