@@ -58,6 +58,7 @@
   color:var(--coul-blanc);
   font-size: 14px;
   cursor: pointer;
+  width: 100px;
 }
 
 .action-buttons button:first-child {
@@ -68,10 +69,10 @@
 }
 
 .action-buttons button:last-child {
-  background-color: var(--coul-principale);
+  background-color: var(--coul-accent);
 }
 .action-buttons button:last-child:hover {
-  background-color: var(--coul-secondaire-fonce);
+  background-color: var(--coul-danger);
 }
 
 /* ===================================== */
@@ -100,7 +101,7 @@
 }
 
 .table-crud tbody tr:nth-child(even) {
-  background-color: var(--coul-secondaire-fonce);
+  background-color: var(--coul-pale);
 }
 
 .table-crud tbody tr:hover {
@@ -114,11 +115,40 @@
   margin-top: 20px;
 }
 
+/*Gérer les images*/
+
+.table-crud tbody tr {
+  height: 80px;
+}
+
+.table-crud td {
+  vertical-align: middle;
+}
+
+.timbre-image-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.table-crud td {
+  vertical-align: middle;
+}
+
+.timbre-thumbnail {
+  max-width: 80px;
+  max-height: 80px;
+  object-fit: contain;
+}
+
+
+
 /* ===================================== */
 /* ========== FORMULAIRE =============== */
 /* ===================================== */
 
-.form-utilisateur {
+.form-utilisateur,
+.form-timbre {
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -131,7 +161,8 @@
 }
 
 
-.form-utilisateur label {
+.form-utilisateur label, 
+.form-timbre label {
   display: block;
   margin-bottom: 0.5rem;
   font-weight: bold;
@@ -143,7 +174,13 @@
 .form-utilisateur input[type="number"],
 .form-utilisateur input[type="password"],
 .form-utilisateur input[type="datetime-local"],
-.form-utilisateur select {
+.form-utilisateur select,
+.form-timbre input[type="text"],
+.form-timbre input[type="email"],
+.form-timbre input[type="number"],
+.form-timbre input[type="password"],
+.form-timbre input[type="datetime-local"],
+.form-timbre select {
   width: 100%;
   padding: 10px;
   border: 1px solid var(--coul-noir);
@@ -154,18 +191,23 @@
 }
 
 .form-utilisateur input:focus
-.form-utilisateur select:focus {
+.form-utilisateur select:focus,
+.form-timbre input:focus,
+.form-timbre select:focus {
   background-color: var(--coul-blanc);
   cursor: not-allowed;
   outline: none;
 }
 
-.form-utilisateur input[type="checkbox"] {
+.form-utilisateur input[type="checkbox"],
+.form-timbre input[type="checkbox"] {
   margin-right: 0.5rem;
 }
 
 .form-utilisateur .btn,
-.form-utilisateur button[type="submit"] {
+.form-utilisateur button[type="submit"],
+.form-timbre .btn,
+.form-timbre button[type="submit"] {
   align-self: flex-start;
   background-color: var(--coul-succes);
   color: var(--coul-blanc);
@@ -178,12 +220,15 @@
 }
 
 .form-utilisateur .btn:hover,
-.form-utilisateur button[type="submit"]:hover {
+.form-utilisateur button[type="submit"]:hover,
+.form-timbre .btn:hover,
+.form-timbre button[type="submit"]:hover  {
   background-color: var(--coul-secondaire-fonce);
 }
 
-.form-utilisateur .error {
-  color: var(--coul-danger);
+.form-utilisateur .error,
+.form-timbre .error  {
+  color: var(--coul-blanc);
   font-size: 0.9rem;
   margin-top: -0.5rem;
   margin-bottom: 1rem;
@@ -241,21 +286,26 @@
     text-align: left;
   }
 
-  .form-utilisateur {
+  .form-utilisateur,
+  .form-timbre {
     padding: 0 10px;
   }
 
-  .form-utilisateur label {
+  .form-utilisateur label,
+  .form-timbre label {
     font-size: 14px;
   }
 
   .form-utilisateur input,
-  .form-utilisateur select {
+  .form-utilisateur select,
+  .form-timbre input,
+  .form-timbre select {
     font-size: 14px;
     padding: 8px;
   }
 
-  .form-utilisateur .btn {
+  .form-utilisateur .btn,
+  .form-timbre .btn {
     width: 100%;
     text-align: center;
   }

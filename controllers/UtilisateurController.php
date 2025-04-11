@@ -12,13 +12,12 @@ class UtilisateurController
 {
     public function __construct()
     {
-        // Auth::session();
+        Auth::session();
         // Auth::privilege();
     }
 
     public function index()
     {
-
         $utilisateurs = (new Utilisateur)->all();
         return View::render('utilisateur/index', ['utilisateurs' => $utilisateurs]);
     }

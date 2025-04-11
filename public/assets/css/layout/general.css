@@ -56,7 +56,6 @@ html {
   padding: 15px;
   border-radius: 8px;
   backdrop-filter: blur(5px);
-  margin-top: auto; /* Place le formulaire au bas de la bannière */
 }
 
 

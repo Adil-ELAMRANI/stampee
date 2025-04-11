@@ -34,7 +34,7 @@ class AuthController {
                     'nom' => $utilisateur->nom,
                     'privilege_id' => $utilisateur->privilege_id
                 ];
-                $_SESSION['fingerPrint'] = md5($_SERVER['HTTP_USER_AGENT'] . $_SERVER['REMOT_ADDR']);
+                $_SESSION['fingerPrint'] = md5($_SERVER['HTTP_USER_AGENT'] . $_SERVER['REMOTE_ADDR']);
 
                 // Correction de la redirection
 

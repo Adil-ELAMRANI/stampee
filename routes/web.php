@@ -29,10 +29,20 @@ Route::get('/timbre/delete', 'TimbreController@delete');
 // CRUD Enchère
 Route::get('/enchere', 'EnchereController@index');             
 Route::get('/enchere/create', 'EnchereController@create');     
-Route::post('/enchere/create', 'EnchereController@store');     
+Route::post('/enchere/create', 'EnchereController@store');
+Route::post('/enchere/store', 'EnchereController@store');     
 Route::get('/enchere/edit', 'EnchereController@edit');         
 Route::post('/enchere/update', 'EnchereController@update');    
-Route::get('/enchere/delete', 'EnchereController@delete');     
+Route::get('/enchere/delete', 'EnchereController@delete');  
+
+// Enchère - Détail & mise
+Route::get('/enchere/show', 'MiseController@show');
+Route::post('/mise/store', 'MiseController@store');
+
+// Catalogue
+Route::get('/catalogue', 'CatalogueController@index');
+
+
 
 
 Route::dispatch();
